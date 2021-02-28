@@ -1,0 +1,109 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  background-color: hsl(0, 0%, 98%);
+}
+
+/*** HEADER ***/
+header {
+  text-align: center;
+  margin-top: 20px;
+}
+
+hgroup h1 {
+  font-weight: 200;
+  font-size: 36px;
+}
+
+hgroup h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+header p {
+  color: hsl(229, 6%, 66%);
+}
+
+/*** MAIN ***/
+.container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 100px);
+  grid-gap: 30px;
+  margin-top: 2%;
+}
+
+.cntr {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 8px hsl(240, 2%, 71%);
+  padding: 30px;
+  position: relative;
+}
+
+.cntr p {
+  color: hsl(229, 6%, 66%);
+}
+
+.cntr img {
+  /* transform: translate(330%, 50%); */
+  margin-bottom: 30px;
+  margin-right: 30px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.cntr--supervisor {
+  grid-column-start: 2;
+  grid-column-end: span 2;
+  grid-row-start: 2;
+  grid-row-end: span 2;
+  border-top: 5px solid hsl(180, 27%, 44%);
+}
+
+.cntr--team {
+  grid-column-start: 4;
+  grid-column-end: span 2;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+  border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.cntr--karma {
+  grid-column-start: 4;
+  grid-column-end: span 2;
+  grid-row-start: 3;
+  grid-row-end: span 2;
+  border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.cntr--calculator {
+  grid-column-start: 6;
+  grid-column-end: span 2;
+  grid-row-start: 2;
+  grid-row-end: span 2;
+  border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+/*** FOOTER ***/
+footer {
+  margin-top: 30px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
